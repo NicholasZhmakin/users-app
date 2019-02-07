@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Chau+Philomene+One|Rationale');
+
+p {
+    margin: 0;
+    font-family: 'Rationale', sans-serif;
+}
+
+h4, h3 {
+    font-family: 'Chau Philomene One', sans-serif;
+}
+
+span {
+    font-weight: bold; 
+}
+
+.empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 6rem;
+}
+
+/* Users list */
+
+.usersList {
+    height: 84vh;
+    overflow: auto;
+}
+
+.userBox {
+    margin: 5px 0;
+}
+
+.userBox a {
+    background: white;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 100px;
+}
+
+a.active {
+    background: rgb(202, 201, 201); 
+}
+
+.userBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.userBoxTitle{
+    display: grid;
+    grid-template-rows: auto auto;
+    align-content: center;    
+}
+
+.userBoxTitle p {
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Additional information about the user */
+
+/* Main info + IMG */
+.details {
+    display: grid;
+    grid-gap: 10px;
+    height: 100%;
+}
+
+.details .mainInfo {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 300px 1fr;
+    align-content: center;
+    justify-items: center;
+    font-size: 18px;
+}
+
+.details .mainInfo div {
+    display: grid;
+    grid-template-rows: auto auto;
+    align-content: center;
+    grid-gap: 10px;
+    text-align: center;
+}
+
+.mainInfo img {
+    width: 200px;
+    height: 200px;
+    border: 1px inset rgb(31, 30, 30);
+}
+
+/* Other info (Address + Contact) */
+.otherInfo {
+    display: grid;
+    justify-content: end;
+    grid-gap: 10px;
+}
+
+.otherInfo div {
+    width: 380px;
+}
+
+.contact, .address {
+    margin: 0 auto;
+    padding-left: 100px;
+}
+
+/* Loader */
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(76, 5, 104);
+    font-size: 8rem;
+}
